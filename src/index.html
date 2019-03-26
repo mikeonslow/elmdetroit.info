@@ -8,6 +8,18 @@
 </head>
 
 <body>
+
+
+<script>
+
+
+  var xhr = new XMLHttpRequest();
+  xhr.addEventListener('load', function(data) {
+    console.log('api.meetup.com/elm-detroit', data);
+  });
+  xhr.open('GET', 'http://api.meetup.com/elm-detroit');
+  xhr.send();
+</script>
 </body>
 
 </html>
